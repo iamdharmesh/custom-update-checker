@@ -1,8 +1,8 @@
 {
 	"name": "Custom Update Checker",
 	"slug": "custom-update-checker",
-	"version": "0.2.0",
-	"download_url": "https://github.com/iamdharmesh/custom-update-checker/releases/download/0.2.0/custom-update-checker.zip",
+	"version": "0.3.0",
+	"download_url": "https://github.com/iamdharmesh/custom-update-checker/releases/download/0.3.0/custom-update-checker.zip",
 	"homepage": "https://github.com/iamdharmesh/custom-update-checker",
 	"requires": "6.8",
 	"tested": "7.0",
@@ -12,6 +12,6 @@
 	"last_updated": "2026-07-05 08:00:00",
 	"sections": {
 		"description": "Custom Update Checker is a plugin that allows you to check for updates for your plugin.",
-		"changelog": "<h4>0.2.0</h4><ul><li>Initial release.</li></ul>"
+		"changelog": "<h4>0.3.0</h4><ul><li>Added info.json based update checker for self-hosted updates.</li></ul>"
 	}
 }
