@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
  * 3. Publish that version via WordPress.org SVN; wp.org will take over updates.
  */
 
-require_once __DIR__ . '/vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
