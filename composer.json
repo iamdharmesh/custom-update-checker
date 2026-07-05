@@ -11,5 +11,8 @@
 		"exclude": [
 		  "!/vendor/"
 		]
+	},
+	"scripts": {
+		"build": "composer archive --file=custom-update-check --format=zip"
 	}
 }
