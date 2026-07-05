@@ -1,0 +1,18 @@
+{
+    "name": "Custom Update Check",
+    "slug": "custom-update-check",
+    "version": "0.2.0",
+    "download_url": "https://github.com/iamdharmesh/custom-update-checker/releases/download/0.2.0/custom-update-check.zip",
+    "homepage": "https://github.com/iamdharmesh/custom-update-check",
+    "requires": "6.8",
+    "tested": "7.0",
+    "requires_php": "7.4",
+    "author": "Dharmesh Patel",
+    "author_homepage": "https://github.com/iamdharmesh",
+    "last_updated": "2026-07-05 08:00:00",
+    "sections": {
+      "description": "Custom Update Check is a plugin that allows you to check for updates for your plugin.",
+      "changelog": "<h4>0.2.0</h4><ul><li>Initial release.</li></ul>"
+    }
+  }
+  

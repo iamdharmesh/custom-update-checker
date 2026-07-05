@@ -29,12 +29,24 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
+// GH release based update checker
 $custom_update_check_updater = PucFactory::buildUpdateChecker(
 	'https://github.com/iamdharmesh/custom-update-checker/',
 	__FILE__,
 	'custom-update-check'
 );
 $custom_update_check_updater->getVcsApi()->enableReleaseAssets( '/^custom-update-check\.zip$/' );
+
+// Info.json based update checker
+// add_action( 'init', function () {
+// 	$update_checker = PucFactory::buildUpdateChecker(
+// 		// URL of the metadata file you host. Must be publicly reachable by the
+// 		// client site.
+// 		'https://raw.githubusercontent.com/iamdharmesh/custom-update-checker/refs/heads/main/info.json',
+// 		__FILE__,
+// 		'custom-update-check'
+// 	);
+// } );
 
 /**
  * Display plugin version in admin to confirm activation.
