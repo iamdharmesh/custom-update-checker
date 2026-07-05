@@ -3,7 +3,7 @@
  * Plugin Name:       Custom Update Checker
  * Plugin URI:        https://github.com/iamdharmesh/custom-update-checker
  * Description:       Demo plugin for self-hosted updates via GitHub Releases and Plugin Update Checker.
- * Version:           0.1.0
+ * Version:           0.2.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            iamdharmesh
@@ -62,7 +62,7 @@ function custom_update_checker_admin_notice() {
 			sprintf(
 				/* translators: %s: plugin version */
 				__( 'Custom Update Checker is active (version %s).', 'custom-update-checker' ),
-				'0.1.0'
+				'0.2.0'
 			)
 		)
 	);
