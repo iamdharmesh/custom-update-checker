@@ -1,0 +1,10 @@
+{
+	"name": "iamdharmesh/custom-update-check",
+	"require": {
+		"php": ">=7.4",
+		"yahnis-elsts/plugin-update-checker": "^5.7"
+	},
+	"config": {
+		"sort-packages": true
+	}
+}
