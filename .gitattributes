@@ -3,4 +3,4 @@
 /README.md export-ignore
 composer.json export-ignore
 composer.lock export-ignore
-custom-update-check.zip export-ignore
+custom-update-checker.zip export-ignore

@@ -1,4 +1,4 @@
-# Custom Update Check
+# Custom Update Checker
 
 Demo WordPress plugin for self-hosted updates via [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker) (PUC v5.7) and GitHub Releases.
 
@@ -10,10 +10,10 @@ Demo WordPress plugin for self-hosted updates via [Plugin Update Checker](https:
 
 ## Local setup
 
-1. Clone the repo into `wp-content/plugins/custom-update-check/` (folder name must match the plugin slug):
+1. Clone the repo into `wp-content/plugins/custom-update-checker/` (folder name must match the plugin slug):
 
    ```bash
-   git clone git@github.com:iamdharmesh/custom-update-checker.git wp-content/plugins/custom-update-check
+   git clone git@github.com:iamdharmesh/custom-update-checker.git wp-content/plugins/custom-update-checker
    ```
 
 2. Install dependencies:
@@ -22,4 +22,4 @@ Demo WordPress plugin for self-hosted updates via [Plugin Update Checker](https:
    composer install --no-dev
    ```
 
-3. Activate **Custom Update Check** in the WordPress admin.
+3. Activate **Custom Update Checker** in the WordPress admin.

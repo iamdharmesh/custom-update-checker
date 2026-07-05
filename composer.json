@@ -1,5 +1,5 @@
 {
-	"name": "iamdharmesh/custom-update-check",
+	"name": "iamdharmesh/custom-update-checker",
 	"require": {
 		"php": ">=7.4",
 		"yahnis-elsts/plugin-update-checker": "^5.7"
@@ -13,6 +13,6 @@
 		]
 	},
 	"scripts": {
-		"build": "composer archive --file=custom-update-check --format=zip"
+		"build": "composer archive --file=custom-update-checker --format=zip"
 	}
 }

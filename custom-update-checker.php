@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Custom Update Check
+ * Plugin Name:       Custom Update Checker
  * Plugin URI:        https://github.com/iamdharmesh/custom-update-checker
  * Description:       Demo plugin for self-hosted updates via GitHub Releases and Plugin Update Checker.
  * Version:           0.1.0
@@ -9,10 +9,10 @@
  * Author:            iamdharmesh
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       custom-update-check
+ * Text Domain:       custom-update-checker
  * Update URI:        https://github.com/iamdharmesh/custom-update-checker
  *
- * @package CustomUpdateCheck
+ * @package CustomUpdateChecker
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -30,12 +30,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 // GH release based update checker
-$custom_update_check_updater = PucFactory::buildUpdateChecker(
+$custom_update_checker_updater = PucFactory::buildUpdateChecker(
 	'https://github.com/iamdharmesh/custom-update-checker/',
 	__FILE__,
-	'custom-update-check'
+	'custom-update-checker'
 );
-$custom_update_check_updater->getVcsApi()->enableReleaseAssets( '/^custom-update-check\.zip$/' );
+$custom_update_checker_updater->getVcsApi()->enableReleaseAssets( '/^custom-update-checker\.zip$/' );
 
 // Info.json based update checker
 // add_action( 'init', function () {
@@ -44,14 +44,14 @@ $custom_update_check_updater->getVcsApi()->enableReleaseAssets( '/^custom-update
 // 		// client site.
 // 		'https://raw.githubusercontent.com/iamdharmesh/custom-update-checker/refs/heads/main/info.json',
 // 		__FILE__,
-// 		'custom-update-check'
+// 		'custom-update-checker'
 // 	);
 // } );
 
 /**
  * Display plugin version in admin to confirm activation.
  */
-function custom_update_check_admin_notice() {
+function custom_update_checker_admin_notice() {
 	if ( ! current_user_can( 'activate_plugins' ) ) {
 		return;
 	}
@@ -61,10 +61,10 @@ function custom_update_check_admin_notice() {
 		esc_html(
 			sprintf(
 				/* translators: %s: plugin version */
-				__( 'Custom Update Check is active (version %s).', 'custom-update-check' ),
+				__( 'Custom Update Checker is active (version %s).', 'custom-update-checker' ),
 				'0.1.0'
 			)
 		)
 	);
 }
-add_action( 'admin_notices', 'custom_update_check_admin_notice' );
+add_action( 'admin_notices', 'custom_update_checker_admin_notice' );
